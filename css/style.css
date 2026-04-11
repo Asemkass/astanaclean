@@ -1352,3 +1352,37 @@ footer {
   .footer-col { text-align: center; }
   .contact-list li { justify-content: center; }
 }
+
+/* Контейнер для кнопок в подвале */
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Расстояние между кнопками */
+  margin-top: 15px;
+}
+
+/* Стили для кнопки Instagram */
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* Фирменный градиент Instagram */
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px; /* Округлость углов (настройте под whatsapp-btn, если там другая) */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(204, 35, 102, 0.4);
+}
+
+.instagram-btn i {
+  font-size: 1.2rem;
+}
